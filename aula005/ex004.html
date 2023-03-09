@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 25pt arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.`)
+        var idade = window.prompt('Quantos anos você tem?')
+        document.write(`Com ${idade} anos,<br> você ainda está novo(a).<br>`)
+        document.write(`Seu nome em letras maiúscula fica, ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em letras minúscula fica, ${nome.toLowerCase()}`)
+
+        /*
+        var n1 = 1545.5
+        n1 = 1545.5
+        n1.tofixed(2)
+        1545.50 ---- colocou 2 casas decimais após o ponto.
+        n1.tofixed(2).replace('.' ,',') --- troca o ponto pela vírgula com duas casas decimais
+        1545,50
+        n1.toLocaleString('pt-BR' , {style: 'currency' , currency: 'BRL'}) Em real R$ 1,545.50
+        n1.toLocaleString('pt-BR' , {style: 'currency' , currency: 'USD'}) Em dólar US$ 1,545.50
+        n1.toLocaleString('pt-BR' , {style: 'currency' , currency: 'USD'}) Em Euro E 1,545.50
+        */
+    </script>
+</body>
+</html>
