@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio ex011</title>
+</head>
+<body>
+    <h1>Testando Nacionalidade</h1>
+  Vivendo em: <input type="text" name="txtnc" id="txtnc">
+    <input type="button" value="Verificar" onclick="conferir()">
+    <div id="res"></div>
+    <script>
+        function conferir(){
+            var txtnc = window.document.getElementById('txtnc')
+            var res = window.document.getElementById("res")
+        var pais = Text(txtnc.value)
+            res.innerHTML = `Vivendo em ${pais}`
+        if(pais == "Brasil") {
+            res.innerHTML = `Você é Brasileiro `
+        }else {
+                `Você é estrangeiro`
+             }
+        }
+    </script>
+</body>
+</html>
