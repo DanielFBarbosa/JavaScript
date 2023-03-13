@@ -5,21 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio ex011</title>
+    <style>
+      body {
+        margin-top: 100px;
+        padding: 20px 20px;
+        border: 6px solid rgb(0, 0, 0);
+        background-color: rgb(216, 207, 207) ;
+        color: rgb(0, 0, 0);
+      }
+      h1{
+        font: bold 3em arial;
+      }
+      div{
+        background-color: rgb(191, 199, 197);
+      }
+    </style>
 </head>
 <body>
-    <h1>Testando Nacionalidade</h1>
-    Se você nasceu em: <input type="text" name="txtnc" id="txtnc">
-    <input type="button" value="verificar" onclick="calcular()">
-    <div id = "res"></div>
-    <script>
-      function calcular() {
-        var txtn = window.document.querySelector('input#txtnc')
+ <h1>Nacionalidade</h1>
+    <div>
+      <p>Se você mora no Brasil e nasceu em:</p> <input type="text" name="txtn" id="txtn">
+      <input type="button" value="verificar" onclick="nacionalidade()">
+    </div>
+    <div id="res"> </div>
+     <script>
+      function nacionalidade(){ 
+         var txtna = window.document.querySelector('input#txtn')
         var res = window.document.querySelector('div#res')
-        var pais = Number(txtn.value)
-        res.innerHTML = `<p>Você é Brasileiro.</p>`
-        res.innerHTML += `Mantenha-se em segurança em outro pais`
-        if()
+        var nascer = String(txtna.value)
+        if (nascer == 'Brasil') {  
+          res.innerHTML = `Você é <strong>brasileiro</strong>` } 
+          else{ 
+            res.innerHTML = `você é <strong>Estrangeiro</strong>`
+
+          }
+          
       }
-    </script>
+     </script>
 </body>
 </html>
