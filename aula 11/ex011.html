@@ -8,21 +8,18 @@
 </head>
 <body>
     <h1>Testando Nacionalidade</h1>
-  Vivendo em: <input type="text" name="txtnc" id="txtnc">
-    <input type="button" value="Verificar" onclick="conferir()">
-    <div id="res"></div>
+    Se você nasceu em: <input type="text" name="txtnc" id="txtnc">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id = "res"></div>
     <script>
-        function conferir(){
-            var txtnc = window.document.getElementById('txtnc')
-            var res = window.document.getElementById("res")
-        var pais = Text(txtnc.value)
-            res.innerHTML = `Vivendo em ${pais}`
-        if(pais == "Brasil") {
-            res.innerHTML = `Você é Brasileiro `
-        }else {
-                `Você é estrangeiro`
-             }
-        }
+      function calcular() {
+        var txtn = window.document.querySelector('input#txtnc')
+        var res = window.document.querySelector('div#res')
+        var pais = Number(txtn.value)
+        res.innerHTML = `<p>Você é Brasileiro.</p>`
+        res.innerHTML += `Mantenha-se em segurança em outro pais`
+        if()
+      }
     </script>
 </body>
 </html>
