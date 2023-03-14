@@ -22,7 +22,7 @@ switch(diaSem){
     case 6:
         console.log('Sábado')
         break
-    case 7:
+    default:
         console.log('(ERRO)Dia inválido!!')
         break
                    
