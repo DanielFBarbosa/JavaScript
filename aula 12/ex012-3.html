@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição aninhada</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(153, 185, 141);
+            color: white;
+        }
+        div {
+            padding: 20px 30px 30px;
+            background-color: #558f4a;
+            font-size: 2.em;
+            border: 1px solid rgb(252, 252, 252);
+            box-shadow: 10px 5px 50px #1d3817;
+        }
+        div#res {
+            font-style: italic;
+            font-size: 40px;
+            border: 0px  ;
+            padding: 50px 20px 20px 0px;
+            box-shadow: 0px 0px ;
+            color: #37d613;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <h1>Condição aninhada</h1>
+        <input type="text" name="txthr" id="txthr">
+        <input type="button" value="verificar" onclick="horario()">
+        <div id="res"></div>
+    </div>
+    <script>
+        function horario() {
+            var hora = window.document.getElementById('txthr')
+            var res = window.document.getElementById('res')
+            var hor = String(hora.value)
+        
+           if(hor < 6){
+           res.innerText = 'Boa madrugada'
+           }else if(hor <= 12){
+            res.innerText = 'Bom dia'
+           }else if(hor <= 18)
+           res.innerText = 'Boa tarde'
+           else{
+            res.innerHTML = 'Boa noite'
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário atual do sistema</title>
+</head>
+<body>
+    <h1>Horário do Sistema</h1>
+    <input type="text" name="tempo" id="tempo">
+    <input type="button" value="Clique" onclick="horario()">
+    <div id="res"></div>
+    <script>
+        function horario(){
+            var agora = new Date()
+            var tempo = agora.getHours()
+            var res = window.document.querySelector('div#res')
+            var hora = String(tempo.value)
+            if(tempo < 6){
+                res.innerHTML = ` Agora são exatamente ${tempo} horas<br> Boa madrugada`
+            }else if(tempo <= 12){
+                res.innerHTML = `Agora são exatamente ${tempo} horas <br> Bom dia`
+            }else if(tempo <= 18){
+                res.innerHTML = `Agora são exatamente ${tempo} horas <br> Boa tarde`
+            }else{
+                res.innerHTML = `Agora são exatamente ${tempo} horas <br> Boa noite`
+            }
+
+        }
+    </script>
+</body>
+</html>
