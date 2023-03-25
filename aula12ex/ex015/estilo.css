@@ -15,16 +15,9 @@ section {
     width: 500px;
     margin: auto;
 }
-
-div {
-    text-align: center;
-    padding: 20px;
-}
-
 footer {
     color: white;
     text-align: center;
     font-style: italic;
-    margin-top: 150px;
 }
 
